@@ -22,8 +22,7 @@ on:
 #    - cron: 0 8 * * 5
 
 env:
-  # REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_URL: https://github.com/KFERMercer/OpenWrt 
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -64,6 +63,9 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        # 切换到之前的commit
+        cd openwrt
+        git chekcout e04fd21629fead0cae623df65a6a58466dfe1d51
 
     - name: Load custom feeds
       run: |
