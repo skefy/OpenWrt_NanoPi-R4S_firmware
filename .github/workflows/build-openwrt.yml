@@ -65,7 +65,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         # 切换到之前的commit
         cd openwrt
-        git chekcout e04fd21629fead0cae623df65a6a58466dfe1d51
+        git checkout e04fd21629fead0cae623df65a6a58466dfe1d51
 
     - name: Load custom feeds
       run: |
