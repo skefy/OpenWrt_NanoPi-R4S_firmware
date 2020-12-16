@@ -22,8 +22,12 @@ on:
 #    - cron: 0 8 * * 5
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  # 因为lean去掉了R4S支持，暂时切换小波的代码
+  # REPO_URL: https://github.com/coolsnowwolf/lede
+  # REPO_BRANCH: master
+  REPO_URL: https://github.com/tian-xiaobo/openwrt
+  REPO_BRANCH: r4s
+  
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -63,9 +67,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        # 切换到之前的commit
-        cd openwrt
-        git checkout e04fd21629fead0cae623df65a6a58466dfe1d51
 
     - name: Load custom feeds
       run: |
