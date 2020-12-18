@@ -67,6 +67,10 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        
+        # 添加 openclash
+        git clone https://github.com/vernesong/OpenClash.git
+        mv OpenClash/luci-app-openclash openwrt/package/
 
     - name: Load custom feeds
       run: |
