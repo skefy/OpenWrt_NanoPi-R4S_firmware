@@ -75,6 +75,10 @@ jobs:
         # 添加 luci-theme-argon
         cd openwrt/package/
         git clone https://github.com/jerrykuku/luci-theme-argon.git
+        
+        # 添加 dockerman
+        git clone https://github.com/lisaac/luci-app-dockerman.git
+        mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
 
     - name: Load custom feeds
       run: |
