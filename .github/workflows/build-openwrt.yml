@@ -25,8 +25,11 @@ env:
   # 因为lean去掉了R4S支持，暂时切换小波的代码
   # REPO_URL: https://github.com/coolsnowwolf/lede
   # REPO_BRANCH: master
-  REPO_URL: https://github.com/tian-xiaobo/openwrt
-  REPO_BRANCH: r4s
+  
+  # REPO_URL: https://github.com/tian-xiaobo/openwrt
+  # REPO_BRANCH: r4s
+  REPO_URL: https://github.com/1715173329/openwrt-official
+  REPO_BRANCH: nanopi-r4s
   
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
