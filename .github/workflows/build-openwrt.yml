@@ -33,7 +33,7 @@ env:
   # REPO_BRANCH: nanopi-r4s
   
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: .lede_config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -73,19 +73,19 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
         # 添加 openclash
-        # git clone --depth=1 https://github.com/vernesong/OpenClash.git
-        # mv OpenClash/luci-app-openclash openwrt/package/
+        git clone --depth=1 https://github.com/vernesong/OpenClash.git
+        mv OpenClash/luci-app-openclash openwrt/package/
         
         # 添加 luci-theme-argon
         # cd openwrt/package/
         # git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git
         # cd ../..
         
-        # 添加 dockerman
-        # git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
+        添加 dockerman
+        git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
         # git clone --depth=1 https://github.com/lisaac/luci-lib-docker.git
         # sed -i 's/+docker-ce/+docker/g' luci-app-dockerman/applications/luci-app-dockerman/Makefile
-        # mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
+        mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
         # mv luci-lib-docker/collections/luci-lib-docker openwrt/package/
 
     - name: Load custom feeds
