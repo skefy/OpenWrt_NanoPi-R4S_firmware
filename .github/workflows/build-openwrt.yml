@@ -73,20 +73,20 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
         # 添加 openclash
-        git clone --depth=1 https://github.com/vernesong/OpenClash.git
-        mv OpenClash/luci-app-openclash openwrt/package/
+        # git clone --depth=1 https://github.com/vernesong/OpenClash.git
+        # mv OpenClash/luci-app-openclash openwrt/package/
         
         # 添加 luci-theme-argon
-        cd openwrt/package/
-        git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git
-        cd ../..
+        # cd openwrt/package/
+        # git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git
+        # cd ../..
         
         # 添加 dockerman
-        git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
-        git clone --depth=1 https://github.com/lisaac/luci-lib-docker.git
-        sed -i 's/+docker-ce/+docker/g' luci-app-dockerman/applications/luci-app-dockerman/Makefile
-        mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
-        mv luci-lib-docker/collections/luci-lib-docker openwrt/package/
+        # git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
+        # git clone --depth=1 https://github.com/lisaac/luci-lib-docker.git
+        # sed -i 's/+docker-ce/+docker/g' luci-app-dockerman/applications/luci-app-dockerman/Makefile
+        # mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/
+        # mv luci-lib-docker/collections/luci-lib-docker openwrt/package/
 
     - name: Load custom feeds
       run: |
