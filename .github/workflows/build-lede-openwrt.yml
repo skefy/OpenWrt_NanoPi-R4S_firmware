@@ -73,9 +73,9 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
         # 添加 openclash
-        echo "=== add openclash ==="
-        git clone --depth=1 https://github.com/vernesong/OpenClash.git
-        mv OpenClash/luci-app-openclash openwrt/package/
+        # echo "=== add openclash ==="
+        # git clone --depth=1 https://github.com/vernesong/OpenClash.git
+        # mv OpenClash/luci-app-openclash openwrt/package/
 
     - name: Load custom feeds
       run: |
