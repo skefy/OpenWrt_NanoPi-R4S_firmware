@@ -78,6 +78,10 @@ jobs:
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git 
         cd ../../../
         
+        # 添加 dockerman
+        git clone --depth=1 https://github.com/lisaac/luci-app-dockerman.git
+        mv luci-app-dockerman/applications/luci-app-dockerman/ openwrt/package/lean/
+        
         # 添加 openclash
         # echo "=== add openclash ==="
         # git clone --depth=1 https://github.com/vernesong/OpenClash.git
