@@ -4,6 +4,20 @@
 ![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
 
+**基于 LEDE 或 OpenWrt 源码做的 R4S 编译配置。**
+
+**LEDE：**
+
+- 添加： [luci-app-dockerman](https://github.com/lisaac/luci-app-dockerman)
+- 更新： [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon) 为最新，UI显示更佳好看
+- 组件选择： python3、netdata、TTYD终端、定时重启、分区自动挂载、 web文件传输、你懂的插件、动态dns、UPnP、Samba、Aria2、ZeroTier等
+
+**Openwrt：**
+
+- [ ] 待完善
+
+====================================
+
 Build OpenWrt using GitHub Actions
 
 [Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
