@@ -6,6 +6,8 @@
 
 **基于 LEDE 或 OpenWrt 源码做的 R4S 编译配置。**
 
+> PS: 可直接在 [Actions](https://github.com/skefy/OpenWrt_NanoPi-R4S_firmware/actions?query=workflow%3A%22Build+Lede+OpenWrt%22) 中下载已经编译好的固件使用。
+
 **LEDE：**
 
 - 添加： [luci-app-dockerman](https://github.com/lisaac/luci-app-dockerman)
