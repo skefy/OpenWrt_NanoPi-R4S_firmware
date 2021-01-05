@@ -26,12 +26,6 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   
-  # REPO_URL: https://github.com/tian-xiaobo/openwrt
-  # REPO_BRANCH: r4s
-  
-  # REPO_URL: https://github.com/1715173329/openwrt-official
-  # REPO_BRANCH: nanopi-r4s
-  
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .lede_config
   DIY_P1_SH: diy-part1.sh
