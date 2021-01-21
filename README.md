@@ -12,7 +12,7 @@
 
 - 添加： [luci-app-dockerman](https://github.com/lisaac/luci-app-dockerman)
 - 更新： [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon) 为最新，UI显示更佳好看
-- 组件选择： python3、netdata、TTYD终端、定时重启、分区自动挂载、 web文件传输、你懂的插件、动态dns、UPnP、Samba、Aria2、ZeroTier等
+- 组件选择： python3、netdata、TTYD终端、定时重启、分区自动挂载、 web文件传输、你懂的插件、动态dns、UPnP、Samba、Aria2、内存清理等
 
 **Openwrt：**
 
