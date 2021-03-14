@@ -47,14 +47,13 @@ CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
 # CONFIG_TARGET_MULTI_PROFILE is not set
 # CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r2s is not set
-# CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-1gb is not set
-CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s-4gb=y
+CONFIG_TARGET_rockchip_armv8_DEVICE_friendlyarm_nanopi-r4s=y
 # CONFIG_TARGET_rockchip_armv8_DEVICE_pine64_rockpro64 is not set
 CONFIG_HAS_SUBTARGETS=y
 CONFIG_HAS_DEVICES=y
 CONFIG_TARGET_BOARD="rockchip"
 CONFIG_TARGET_SUBTARGET="armv8"
-CONFIG_TARGET_PROFILE="DEVICE_friendlyarm_nanopi-r4s-4gb"
+CONFIG_TARGET_PROFILE="DEVICE_friendlyarm_nanopi-r4s"
 CONFIG_TARGET_ARCH_PACKAGES="aarch64_generic"
 CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mcpu=generic"
 CONFIG_CPU_TYPE="generic"
