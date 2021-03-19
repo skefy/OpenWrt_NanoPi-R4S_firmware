@@ -23,8 +23,10 @@ on:
 
 env:
   # lean's openwrt
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  # REPO_URL: https://github.com/coolsnowwolf/lede
+  # REPO_BRANCH: master
+  REPO_URL: https://github.com/1715173329/lede/tree/rockchip-fixes
+  REPO_BRANCH: rockchip-fixes
   
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .lede_config
